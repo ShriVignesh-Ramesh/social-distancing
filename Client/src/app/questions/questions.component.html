@@ -1,0 +1,133 @@
+
+  
+  <ion-content>
+    <ion-item>
+      <div id="container">
+        <h2 >Hi {{name}}!!</h2>
+        <i class="sub_text">Please take a minute to respond and help us with evaluation ...</i><br>
+        
+      </div>
+    </ion-item>
+    
+    <ion-list>
+      <ion-radio-group [(ngModel)]="fever">
+        <ion-list-header>
+          <ion-label>
+            1. Do you have fever ?
+          </ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="throat">
+        <ion-list-header>
+          <ion-label>
+            2. Do you have Sore Throat ?
+          </ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="cough">
+        <ion-list-header>
+          <ion-label>
+            3. Do you have dry and persistent cough ?
+          </ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="pain">
+        <ion-list-header>
+          <ion-label>
+            4. Do you suffer from muscle pain ?
+          </ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="contact">
+        <ion-list-header>
+          <ion-label>
+            5. Have you been in tough with positive COVID-19 patients ?
+          </ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="hotspot">
+        <ion-list-header>
+          <ion-label>
+            6. Have you gone to any COVID-19 hotspot recently ?
+          </ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <div class=" pad_50 align_center">
+      <ion-button color="secondary" class="button_home" shape="round" (click)="submitSurvey()">Submit</ion-button>
+    </div>
+    
+  </ion-content>
+  
+  
+  

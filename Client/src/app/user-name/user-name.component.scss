@@ -1,0 +1,31 @@
+
+ion-content{
+    --ion-background-color: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(100,106,253,1) 0%, rgba(0,212,255,1) 100%);
+}
+#container {
+    text-align: center;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    margin-top: 100px;
+  }
+.icon_style{
+    font-size: 50px;
+    color: white;
+}
+.userNameFontColor{
+    margin-top: 30px;
+    color: white;
+    font-family: monospace;
+}
+.nameInput{
+    margin-top: 50px;
+    color: white;
+    font-family: monospace;
+    border-bottom: 1px solid;
+    border-radius: 10px;
+}
+.button_align{
+    margin-top: 75px;
+}
+  

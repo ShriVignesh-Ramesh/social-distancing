@@ -1,0 +1,35 @@
+#container {
+  text-align: center;
+  padding: 10px;
+  left: 0;
+  right: 0;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+.img_position{
+  bottom: 0px;
+  position: absolute;
+}
+.button_home{
+  margin-top: 10px;
+}
+.sub_text{
+  font-size: 12px;
+  margin-bottom: 10px;
+}

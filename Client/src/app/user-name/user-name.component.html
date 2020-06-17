@@ -1,0 +1,12 @@
+<ion-content >
+  <div id="container">
+    <ion-icon name="person-circle-outline" class="icon_style"></ion-icon>
+    <h2 class="userNameFontColor">You can be called as ??</h2>
+    <ion-input placeholder="Enter a name" class="nameInput" [(ngModel)]="name"></ion-input>
+    <div class="button_align">
+      <ion-button color="light" shape="round" (click)="safeClick()">Protect me from Everyone</ion-button>
+        <ion-button color="danger" shape="round" (click)="riskClick()">Protect me from high risk </ion-button>
+    </div>
+    
+  </div>
+</ion-content>

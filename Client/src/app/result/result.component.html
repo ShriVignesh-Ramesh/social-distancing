@@ -1,0 +1,34 @@
+<ion-content>
+  <ion-card>
+    <div class="align_center" *ngIf="highFlag">
+      <h2>Risk : High</h2>
+      <img src="assets/high.png"  class="highWidth">
+      <p class="pad_10">You may have infected with COVID-19, Kindly contact the nearest hospital or  <a href="tel:+108" class="button button-positive">Call for help</a></p>
+    </div>
+    <div class="align_center" *ngIf="!highFlag">
+      <h2>Risk : Low</h2>
+      <img src="assets/safe.png"  class="highWidth">
+      <p class="pad_10">You are safe from COVID-19, Kindly contact the nearest hospital or  <a href="tel:+108" class="button button-positive">Call for help</a> if you develop any symptoms</p>
+    </div>
+    <div class="align_center button_pad">
+      <ion-button color="secondary" class="button_home" shape="round" (click)="testAgain()">Test Again</ion-button>
+      <ion-button color="primary" class="button_home" shape="round" (click)="changeAlert()">Change Alert</ion-button>
+      
+    </div>
+    
+  </ion-card>
+ 
+  
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Cases in Tamil Nadu</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+    <div class="align_center button_pad">
+      <ion-button color="secondary" class="button_home" shape="round" (click)="fetchLatest()">Get Latest Data</ion-button>
+    </div>
+    
+  </ion-card>
+</ion-content>
